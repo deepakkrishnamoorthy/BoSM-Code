@@ -1,14 +1,14 @@
 # BoSM-Code
 Readme for execution - Bag-of-Sequential-Models Based Embeddings for video anomaly detection
 
-# Step 1: (Add the folder RealtimeHofHogReleas to matlab directory before executing this step to avoid unncessary errors on video codec and neccesary feature extraction functions)
+# Step 1: 
 MBH Feature Extraction:
 1.	Open cvsegmentsmbh.m in matlab editor.
 2.	Change the directory of training/videos (comment provided in the code)
 3.	Save the final data in the form of segments (ex:25 frames per segment)
 # Step 2:
 Training the HMM models (Bag of Sequential Models)
-# Download HMM tool from the link provided - (https://github.com/gabrielhuang/murphy-hmm) and add the folders to matlab working directory
+# Download HMM tool from the link provided - (https://github.com/gabrielhuang/murphy-hmm) 
 
 1.	Open cvhmmconv.m file to train the conventional HMM model and the classification code is also available in this particular matlab file.
 2.	To train the model based on the proposed idea, kindly open cvproposed.m. 
