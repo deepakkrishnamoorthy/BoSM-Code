@@ -4,12 +4,10 @@ Readme for execution - Bag-of-Sequential-Models Based Embeddings for video anoma
 # Step 1: 
 MBH Feature Extraction:
 1.	Open cvsegmentsmbh.m in matlab editor.
-2.	Change the directory of training/videos (comment provided in the code)
+2.	Change the directory of training/videos
 3.	Save the final data in the form of segments (ex:25 frames per segment)
 # Step 2:
 Training the HMM models (Bag of Sequential Models)
-# Download HMM tool from the link provided - (https://github.com/gabrielhuang/murphy-hmm) 
-
 1.	Open cvhmmconv.m file to train the conventional HMM model and the classification code is also available in this particular matlab file.
 2.	To train the model based on the proposed idea, kindly open cvproposed.m. 
 3.	Set the number of models to be trained in the second **for** loop statement.
@@ -23,7 +21,7 @@ Training the HMM models (Bag of Sequential Models)
 
 Forming the testing and training embeddings
 
-1.	After saving the required attributes of modelling (priorC, transmatC, muC, SigmaC, mixmatC), load the training and testing data and execute the loop in sections %%%Forming training Embeddings and %%%Forming testing Embeddings.
+1.	After saving the required attributes of modelling, load the training and testing data and execute the loop in sections %%%Forming training Embeddings and %%%Forming testing Embeddings.
 2.	The number of samples count should be provided in "i", and the number of models count in "j" (Note: the j value should be same as the dimension of model attributes mentioned in the above step.
 
 # Step 4: 
